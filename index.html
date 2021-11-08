@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shopeer</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="module" src="script.js"></script>
+</head>
+
+<body>
+	<nav class="nav-bar">
+		<div class="container nav-bar--container">
+			<div class="logo">Shoppers</div>
+			<ul class="nav-list">
+				<li class="nav-list--item">Store</li>
+				<li class="nav-list--item">Settings</li>
+				<li class="nav-list--item">Account</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<div data-store class="store">
+			<!-- <div class="store-item">
+				<div class="store-item--img" style="background: red;"></div>
+				<div class="store-item--details">
+					<div class="store-item--details---name">Red</div>
+					<div class="store-item--details---price">$12.50</div>
+				</div>
+				<div class="store-item--add">Add to Cart</div>
+			</div>
+
+			<div class="store-item">
+				<div class="store-item--img" style="background: blue;"></div>
+				<div class="store-item--details">
+					<div class="store-item--details---name">blue</div>
+					<div class="store-item--details---price">$12.50</div>
+				</div>
+				<div class="store-item--add">Add to Cart</div>
+			</div>
+
+
+			<div class="store-item">
+				<div class="store-item--img" style="background: rgb(1, 255, 1);"></div>
+				<div class="store-item--details">
+					<div class="store-item--details---name">green</div>
+					<div class="store-item--details---price">$12.50</div>
+				</div>
+				<div class="store-item--add">Add to Cart</div>
+			</div>
+
+
+			<div class="store-item">
+				<div class="store-item--img" style="background: pink;"></div>
+				<div class="store-item--details">
+					<div class="store-item--details---name">pink</div>
+					<div class="store-item--details---price">$12.50</div>
+				</div>
+				<div class="store-item--add">Add to Cart</div>
+			</div>
+			<div class="store-item">
+				<div class="store-item--img" style="background: yellow;"></div>
+				<div class="store-item--details">
+					<div class="store-item--details---name">yellow</div>
+					<div class="store-item--details---price">$12.50</div>
+				</div>
+				<div class="store-item--add">Add to Cart</div>
+			</div>
+			<div class="store-item">
+				<div class="store-item--img" style="background: rgb(204, 0, 255);"></div>
+				<div class="store-item--details">
+					<div class="store-item--details---name">voilet</div>
+					<div class="store-item--details---price">$12.50</div>
+				</div>
+				<div class="store-item--add">Add to Cart</div>
+			</div>
+			<div class="store-item">
+				<div class="store-item--img" style="background: rgb(255, 115, 0);"></div>
+				<div class="store-item--details">
+					<div class="store-item--details---name">orange</div>
+					<div class="store-item--details---price">$12.50</div>
+				</div>
+				<div class="store-item--add">Add to Cart</div>
+			</div>
+			<div class="store-item">
+				<div class="store-item--img" style="background: rgb(110, 65, 27);"></div>
+				<div class="store-item--details">
+					<div class="store-item--details---name">brown</div>
+					<div class="store-item--details---price">$12.50</div>
+				</div>
+				<div class="store-item--add">Add to Cart</div>
+			</div> -->
+		</div>
+	</div>
+	<div cart-main-container class="cart-main ">
+		<div class="cart-logo">
+			<div data-cart-logo-qt class="cart-logo--num">12</div>Cart
+		</div>
+		<div cart-main-wrapper class="cart-wrapper ">
+			<div id="cart-item-container" class="cart-items">
+				<!-- <div id="1" data-store-item class="cart-item">
+					<div data-store-item-showcase class="cart-item--img" style="background: red;"></div>
+					<div class="store-item--details">
+						<div data-store-item-name class="cart-item--details---name">Red</div>
+						<div data-store-item-price class="cart-item--details---price">$12.50</div>
+						<span class="item-multiple">2</span>
+					</div>
+				</div> -->
+			</div>
+			<!-- Cart Total -->
+			<!-- <div class="cart-total">
+				<p class="cart-total-tag">Total:</p>
+				<p class="cart-total-calc">$149.00</p>
+			</div> -->
+		</div>
+		<div cart-main-total class="cart-main-total ">
+			<p class="cart-total-tag">Total:</p>
+			<p data-cart-total-calc class="cart-total-calc">$0.00</p>
+		</div>
+	</div>
+
+	<template data-store-item-template>
+		<div id="1" data-store-item class="store-item">
+			<div data-store-item-showcase class="store-item--img" style="background: red;"></div>
+			<div class="store-item--details">
+				<div data-store-item-name class="store-item--details---name">Red</div>
+				<div data-store-item-price class="store-item--details---price">$12.50</div>
+			</div>
+			<div data-store-item-add class="store-item--add">Add to Cart</div>
+		</div>
+	</template>
+
+	<template data-cart-template>
+		<div data-cart-container class="cart-items">
+			<div id="2" data-cart-item class="cart-item">
+				<div data-cart-item-showcase class="cart-item--img" style="background: blue;"></div>
+				<div class="store-item--details">
+					<div data-cart-item-name class="cart-item--details---name">blue</div>
+					<div data-cart-item-price class="cart-item--details---price">$12.50</div>
+					<span data-cart-item-multiple class="item-multiple">12</span>
+				</div>
+			</div>
+		</div>
+	</template>
+</body>
+
+</html>
