@@ -75,6 +75,7 @@ const handleCartEvent = (e) => {
     const id = e.target.parentNode.id;
     cartArray = cartArray.filter((i) => i.id !== parseInt(id));
   }
+  localStorage.setItem("shoppers-store", JSON.stringify(cartArray));
   populateCart(cartArray);
 };
 document.addEventListener("click", handleCartEvent);
